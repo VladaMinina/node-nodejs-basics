@@ -15,7 +15,7 @@ const remove = async () => {
         console.log('Success operation');
     } catch(error) {
         if (error.code !== 'ENOENT') {
-            throw new Error ("Operation failed: ", error);
+            throw new Error ("FS  operation failed: ", error);
         } else {
             throw new Error (error);
         }
